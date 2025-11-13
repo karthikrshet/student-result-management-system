@@ -1,166 +1,119 @@
-# student-result-management-system
 
+# Student Result Management System
 
----
+> A web-based application for managing student results in schools and colleges.
 
-```markdown
-<div align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&height=220&text=Student%20Result%20Management%20System&fontAlignY=40&color=0:38bdf8,100:9333ea&fontColor=ffffff&fontSize=40&desc=PHP%20%7C%20MySQL%20%7C%20HTML%20%7C%20CSS%20%7C%20JavaScript&descAlignY=65&descAlign=50" />
-</div>
-
----
-
-<h2 align="center">🎓 Student Result Management System (SRMS)</h2>
-
-<p align="center">
-A complete web-based result management platform for schools and colleges to efficiently manage, store, and display student academic performance.  
-Developed using <b>PHP</b> and <b>MySQL</b>, with a clean, responsive <b>HTML/CSS/JavaScript</b> frontend and secure backend.
-</p>
-
-<p align="center">
-  <img src="https://media.giphy.com/media/L1R1tvI9svkIWwpVYr/giphy.gif" width="400" alt="Developer Coding Animation" />
-</p>
+## Table of Contents
+- [Overview](#overview)  
+- [Features](#features)  
+- [Tech Stack](#tech-stack)  
+- [Project Structure](#project-structure)  
+- [Installation](#installation)  
+- [Usage](#usage)  
+- [Screenshots](#screenshots)  
+- [Future Enhancements](#future-enhancements)  
+- [Author](#author)  
+- [License](#license)  
 
 ---
 
-## 🚀 Features
-
-✅ **Admin Dashboard** – Manage students, subjects, classes, and results  
-✅ **Student Portal** – Students can search and view their results online  
-✅ **Result Calculation** – Automated total, grade, and percentage generation  
-✅ **CRUD Operations** – Create, Read, Update, Delete functionality  
-✅ **Authentication** – Secure admin login using PHP sessions  
-✅ **Responsive UI** – Fully optimized for desktop and mobile screens  
-✅ **Database Integration** – Efficient MySQL schema for scalable data handling  
+## Overview  
+This “Student Result Management System” (SRMS) allows educational institutions to manage student data, subjects, examination results and reporting in one platform.  
+Built using **PHP**, **MySQL**, **HTML**, **CSS**, and **JavaScript**, it provides a user-friendly interface for admins and students alike.
 
 ---
 
-## 🧩 Project Structure
+## Features  
+- Admin login and access control  
+- Add/Edit/Delete student details, subjects, and results  
+- Automatic calculation of total marks, percentage, and grade  
+- Students can search their result via roll number  
+- Responsive design suitable for desktop and mobile devices  
 
+---
+
+## Tech Stack  
+- Front-end: HTML5 · CSS3 · JavaScript  
+- Back-end: PHP (Server-side scripting)  
+- Database: MySQL  
+- Environment: XAMPP / WAMP / LAMP (Apache + MySQL)  
+
+---
+
+## Project Structure  
 ```
 
 student-result-management-system/
 │
-├── admin/                  # Admin dashboard files
+├── admin/                  # Admin dashboard pages
 │   ├── add-student.php
 │   ├── manage-results.php
-│   └── ...
+│   └── …
 │
-├── includes/               # Config & session management
+├── includes/               # Configurations and session handling
 │   ├── config.php
 │   ├── dbconnect.php
 │   └── session.php
 │
-├── assets/                 # CSS, JS, and image files
-│
-├── index.php               # Main student result search page
-├── result.php              # Display results for individual students
-└── README.md
+├── assets/                 # CSS, JS, image files
+├── index.php               # Student result search page
+└── result.php              # Display student result page
 
 ```
 
 ---
 
-## ⚙️ Technologies Used
+## Installation  
+### Prerequisites  
+- A web server running PHP (e.g., XAMPP or WAMP)  
+- MySQL database  
 
-| Technology | Purpose |
-|-------------|----------|
-| **HTML5** | Frontend structure |
-| **CSS3** | Styling and responsive layout |
-| **JavaScript** | Dynamic interactivity |
-| **PHP** | Server-side logic |
-| **MySQL** | Database storage |
-| **XAMPP / WAMP** | Local server environment |
-
----
-
-## 🧠 How It Works
-
-1. **Admin Login** → Access the dashboard via secure authentication  
-2. **Add Students & Subjects** → Store class and subject info  
-3. **Enter Marks** → Input marks per subject for each student  
-4. **Auto Calculate Results** → PHP computes total and percentage  
-5. **Student Result Page** → Students view results by roll number  
-
----
-
-## ⚙️ Installation Guide
-
-### 🔧 Requirements
-- **XAMPP**, **WAMP**, or **LAMP** installed  
-- **Apache** and **MySQL** services running  
-
-### 🛠 Setup Steps
-1. Extract the folder into `htdocs` (or `www`)  
-```
-
-C:\xampp\htdocs\student-result-management-system
-
-```
-2. Open **phpMyAdmin** → Create database:
-```
-
-srms_db
-
-```
-3. Import SQL file:
-```
-
-/database/srms_db.sql
-
-```
-4. Start Apache & MySQL → Visit in browser:
+### Setup Steps  
+1. Copy the project folder into your server’s root (e.g., `htdocs/` in XAMPP)  
+2. Create a database (for example: `srms_db`) via phpMyAdmin  
+3. Import the SQL file if included (e.g., `database/srms_db.sql`)  
+4. Configure the connection in `includes/config.php` (database host, user, password)  
+5. Start Apache + MySQL and visit:  
 ```
 
 [http://localhost/student-result-management-system/](http://localhost/student-result-management-system/)
 
 ```
-5. Default Admin Credentials:
-```
-
-Username: admin
-Password: admin
-
-```
+6. Log in as admin (default credentials, if provided)  
 
 ---
 
-## 📸 Screenshots
-
-<p align="center">
-<img src="https://github.com/karthikrshet/student-result-management-system/raw/main/assets/screenshot1.png" width="80%" alt="Dashboard Screenshot" />
-<br><br>
-<img src="https://github.com/karthikrshet/student-result-management-system/raw/main/assets/screenshot2.png" width="80%" alt="Student Result Page Screenshot" />
-</p>
+## Usage  
+- Navigate to Admin → Login → Add students, subjects  
+- Enter examination results → System computes total and percentage  
+- Students can open main page → Enter roll number → View result  
+- Admin can edit or remove records as needed  
 
 ---
 
-## 🌟 Future Enhancements
-
-- 📊 **Result Analytics Dashboard** (Charts & Performance Graphs)  
-- 📱 **Student Login System** for personalized access  
-- 🧾 **Printable Marksheet & PDF Export**  
-- 📬 **Email/SMS Notification System** for published results  
-- 🤖 **AI-based Performance Insights**
+## Screenshots  
+![Dashboard](assets/screenshot1.png)  
+![Result Search](assets/screenshot2.png)  
 
 ---
 
-## 🧑‍💻 Author
+## Future Enhancements  
+- Add charts/analytics for student performance  
+- Student login portal with secured access  
+- Export results as PDF or Excel  
+- Email notification when results are published  
 
+---
+
+## Author  
 **Karthik Rajesh Shet**  
-💡 Full Stack & Software Developer passionate about building scalable web apps using PHP, MySQL, and modern frontend technologies.  
-
-<p align="center">
-<a href="https://github.com/karthikrshet"><img src="https://img.shields.io/badge/GitHub-171515?style=for-the-badge&logo=github&logoColor=white"/></a>
-<a href="mailto:kartikrshet@gmail.com"><img src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white"/></a>
-<a href="https://karthikrshet.github.io/portfolio/"><img src="https://img.shields.io/badge/Portfolio-38BDF8?style=for-the-badge&logo=google-chrome&logoColor=white"/></a>
-</p>
+MCA Graduate | Full Stack Developer  
+GitHub: [karthikrshet](https://github.com/karthikrshet)  
+Email: <kartikrshet@gmail.com>
 
 ---
 
-<div align="center">
-<img src="https://capsule-render.vercel.app/api?type=waving&height=120&section=footer&color=0:9333ea,100:38bdf8" />
-</div>
+## License  
+This project is licensed under the MIT License — see the `LICENSE` file for details.
 ```
 
----
