@@ -7,7 +7,7 @@
 
 <h2 align="center">🎓 Student Result Management System (SRMS)</h2>
 
-<h4> Download srms.zip for all files </h4>
+<h3 align="center"> Download <strong>srms.zip </strong> for all files </h3>
 
 <p align="center">
 A complete web-based result management platform for schools and colleges to efficiently manage, store, and display student academic performance.  
