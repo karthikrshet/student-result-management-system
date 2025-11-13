@@ -120,16 +120,6 @@ Password: admin
 
 ---
 
-## 📸 Screenshots
-
-<p align="center">
-<img src="https://github.com/karthikrshet/student-result-management-system/raw/main/assets/screenshot1.png" width="80%" alt="Dashboard Screenshot" />
-<br><br>
-<img src="https://github.com/karthikrshet/student-result-management-system/raw/main/assets/screenshot2.png" width="80%" alt="Student Result Page Screenshot" />
-</p>
-
----
-
 ## 🌟 Future Enhancements
 
 - 📊 **Result Analytics Dashboard** (Charts & Performance Graphs)  
